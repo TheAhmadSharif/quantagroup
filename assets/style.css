@@ -1,0 +1,156 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'RopaSans', sans-serif;
+    position: relative;
+    z-index: 10;
+}
+
+@font-face {
+    font-family: 'RopaSans';
+    src: url('Ropa_Sans/RopaSans-Regular.ttf') format('truetype'), url('Ropa_Sans/RopaSans.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+
+.container {
+    max-width: 1440px !important;
+    padding: 0 50px;
+}
+/* Common Style */
+ol,ul,li {
+	list-style: none;
+}
+
+
+
+.video {
+	background: 
+}
+
+/* Header nav*/
+
+.nav-block {
+    display: block;
+    margin-right: 80px;
+    margin-top: 47px;
+}
+
+.nav-block  ul li {
+    position: relative;
+    z-index: 12;
+    margin-right: 84px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 10px;
+}
+.nav-block  ul li:last-child {
+    margin-right: 30px;
+}
+.nav-block  ul li a:before {
+    transform: skewX(34deg);
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    background: #e16d3e;
+    width: 8px;
+    height: 20px;
+
+     -webkit-transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+   transition: all 1s ease-in-out;
+}
+.nav-block ul > li a {
+    color: #FFF;
+    text-transform: uppercase;;
+}
+.nav-block ul > li a:hover {
+    text-decoration: none;
+}
+
+.nav-block ul > li a:hover:before {
+    display: block;
+    content: ' ';
+    color: #FFF;
+    text-decoration: none;
+}
+
+.logo-block {
+    position: relative;
+    margin-top: 47px;
+}
+
+.logo-block img {
+    width: 103px;
+    height: auto;
+}
+.nav-list {
+   display: -ms-flexbox;
+   display: flex;
+  justify-content: flex-end; 
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-list  > li {
+  margin: 0 5px; 
+}
+
+
+.brand-heading {
+    font-size: 80px;
+    line-height: 80px;
+    font-family: "Lyon Display Regular";
+    color: #FFF;
+    position: relative;
+    z-index: 10;
+    top: -50px;
+}
+
+.heading-div {
+    align-items: center;
+}
+
+.italic-style {
+    font-style: italic;
+}
+
+.angle-rect {
+    position: absolute;
+    z-index: 12;
+    width: 190px;
+    height: 340px;
+    border: 1px solid #fff;
+    transform: skewX(34deg);
+    -moz-transform: skewX(34deg);
+    -webit-transform: skewX(34deg);
+    background: transparent;
+    top: -70px;
+    left: 0;
+    opacity: 0.4;
+}
