@@ -5,6 +5,7 @@ body, html {
     font-family: 'RopaSans', sans-serif;
     position: relative;
     z-index: 10;
+    font-size: 100%;
 }
 
 @font-face {
@@ -40,31 +41,21 @@ video {
 }
 /* Common Style */
 ol,ul,li {
-	list-style: none;
+    list-style: none;
 }
 
 
 
 .video {
-	background: 
+    background: 
 }
 
 /* Header nav*/
 
 .nav-block {
-    display: block;
-    margin-right: 80px;
     margin-top: 47px;
 }
 
-.nav-block  ul li {
-    position: relative;
-    z-index: 12;
-    margin-right: 84px;
-    margin-bottom: 10px;
-    font-size: 14px;
-    line-height: 10px;
-}
 .nav-block  ul li:last-child {
     margin-right: 30px;
 }
@@ -118,22 +109,32 @@ ol,ul,li {
 }
 
 .nav-list  > li {
-  margin: 0 5px; 
+   width: 85px;
+   position: relative;
+    z-index: 12;
+    margin-right: 84px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 10px;
+
+
 }
 
 
 .brand-heading {
-    font-size: 80px;
-    line-height: 80px;
+    font-size: 5rem;
+    line-height: 5rem;
     font-family: "Lyon Display Regular";
     color: #FFF;
     position: relative;
-    z-index: 10;
     top: -50px;
+    z-index: 999;
 }
 
 .heading-div {
     align-items: center;
+    position: relative;
+    z-index: 999;
 }
 
 .italic-style {
@@ -151,6 +152,38 @@ ol,ul,li {
     -webit-transform: skewX(34deg);
     background: transparent;
     top: -70px;
-    left: 70px;
+    left: 10px;
     opacity: 0.4;
+}
+
+.logo-icon {
+    width: 70px;
+    height: 120px;
+    background: #f2926b;
+    position: absolute;
+    content: ' ';
+    top: -10px;
+    left: -58px;
+    z-index: -4;
+    transform: skewX(-19deg);
+    -moz-transform: skewX(-19deg);
+    -webkit-transform: skewX(-25deg);
+}
+.logo-icon1 {
+    width: 80px;
+    height: 240px;
+    background: #e16d3e;
+    position: absolute;
+    content: ' ';
+    top: -10px;
+    left: 50px;
+    z-index: -3;
+    transform: skewX(34deg);
+    -moz-transform: skewX(34deg);
+    -webkit-transform: skewX(34deg);
+}
+@media only screen and (max-width: 1170px) {
+    .nav-block  ul li:last-child {
+        margin-right: 84px;
+    }
 }
