@@ -1,1 +1,1 @@
-# Cloning http://www.quantagroup.co.uk/
+Cloning http://www.quantagroup.co.uk/
