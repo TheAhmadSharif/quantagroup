@@ -211,8 +211,10 @@ img {
 }
 
 svg {
-  overflow: hidden;
-  vertical-align: middle;
+  /* overflow: hidden; */
+  /* vertical-align: middle; */
+  /* width: auto; */
+  display: inherit;
 }
 
 table {

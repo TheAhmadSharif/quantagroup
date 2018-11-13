@@ -6,6 +6,7 @@ body, html {
     position: relative;
     z-index: 10;
     font-size: 100%;
+    color: #FFF;
 }
 
 @font-face {
@@ -15,6 +16,7 @@ body, html {
     font-style: normal;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +25,7 @@ body, html {
 }
 
 video {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     min-width: 100%;
@@ -32,7 +34,7 @@ video {
     -moz-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
-    z-index: 0;
+    z-index: -1;
 }
 
 .container {
@@ -44,7 +46,9 @@ ol,ul,li {
     list-style: none;
 }
 
-
+a:hover, a:focus, a:active {
+    text-decoration: none !important;
+}
 
 .video {
     background: 
@@ -182,8 +186,76 @@ ol,ul,li {
     -moz-transform: skewX(34deg);
     -webkit-transform: skewX(34deg);
 }
+.discover-btn {
+    font-size: 20px;
+    position: absolute;
+    bottom: -130px;
+    left: 10px;
+    z-index: 99;
+    font-family: 'RopaSans', sans-serif;
+    color: #FFF;
+}
+.discover-btn a {
+    color: #FFF;
+    display: block;
+}
+
 @media only screen and (max-width: 1170px) {
     .nav-block  ul li:last-child {
         margin-right: 84px;
     }
+}
+
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: block;
+    position: absolute;
+    left: -60px;
+    top: 20px;
+    background: url(../images/arrow.png) no-repeat 0 10px;
+    transition: all;
+        -moz-transition: all;
+        -webkit-transition: all;
+}
+
+.circle:hover {
+        border: 2px solid #e16d3e;
+        background: url(../images/arrow.png) no-repeat 0 -18px;
+        transition: all;
+        -moz-transition: all;
+        -webkit-transition: all;
+}
+
+
+.latest-news-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 200px;
+}
+.latest-news-btn a {
+    border: 1px solid #666;
+    padding: 18px 38px;
+    font-size: 18px;
+    color: #F2F2F2;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+.arrow {
+    font-size: 16px;
+}
+
+#header {
+    position: fixed;
+    z-index: 999;
+    width: 1440px;
+}
+
+#part1 {
+    position: relative;
+    z-index: 10;
 }

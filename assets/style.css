@@ -15,6 +15,7 @@ body, html {
     font-style: normal;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -41,13 +42,15 @@ video {
 }
 /* Common Style */
 ol,ul,li {
-	list-style: none;
+    list-style: none;
 }
 
-
+a:hover, a:focus, a:active {
+    text-decoration: none !important;
+}
 
 .video {
-	background: 
+    background: 
 }
 
 /* Header nav*/
@@ -122,16 +125,19 @@ ol,ul,li {
 
 
 .brand-heading {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 5rem;
+    line-height: 5rem;
     font-family: "Lyon Display Regular";
     color: #FFF;
     position: relative;
     top: -50px;
+    z-index: 999;
 }
 
 .heading-div {
     align-items: center;
+    position: relative;
+    z-index: 999;
 }
 
 .italic-style {
@@ -149,40 +155,64 @@ ol,ul,li {
     -webit-transform: skewX(34deg);
     background: transparent;
     top: -70px;
-    left: 70px;
+    left: 10px;
     opacity: 0.4;
 }
 
 .logo-icon {
-    width: 50px;
-    height: 150px;
-    background: #ef5d21;
+    width: 70px;
+    height: 120px;
+    background: #f2926b;
     position: absolute;
     content: ' ';
-    top: 0;
-    left: 25px;
-    z-index: 13;
-
-    transform: skewX(-34deg);
-    -moz-transform: skewX(-34deg);
-    -webkit-transform: skewX(-34deg);
+    top: -10px;
+    left: -58px;
+    z-index: -4;
+    transform: skewX(-19deg);
+    -moz-transform: skewX(-19deg);
+    -webkit-transform: skewX(-25deg);
 }
 .logo-icon1 {
-    width: 50px;
-    height: 150px;
-    background: #ef5d21;
+    width: 80px;
+    height: 240px;
+    background: #e16d3e;
     position: absolute;
     content: ' ';
-    top: 0;
-    left: 125px;
-    z-index: 14;
-
+    top: -10px;
+    left: 50px;
+    z-index: -3;
     transform: skewX(34deg);
     -moz-transform: skewX(34deg);
     -webkit-transform: skewX(34deg);
 }
+.discover-btn {
+    font-size: 20px;
+    position: absolute;
+    bottom: -130px;
+    left: 10px;
+    z-index: 99;
+    font-family: 'RopaSans', sans-serif;
+    color: #FFF;
+}
+.discover-btn a {
+    color: #FFF;
+    display: block;
+}
+
 @media only screen and (max-width: 1170px) {
     .nav-block  ul li:last-child {
         margin-right: 84px;
     }
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid;
+    display: block;
+    position: absolute;
+    left: -60px;
+    top: 20px;
+
 }
