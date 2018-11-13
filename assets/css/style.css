@@ -190,7 +190,7 @@ a:hover, a:focus, a:active {
     font-size: 20px;
     position: absolute;
     bottom: -130px;
-    left: 10px;
+    left: 10px; 
     z-index: 99;
     font-family: 'RopaSans', sans-serif;
     color: #FFF;
@@ -199,6 +199,10 @@ a:hover, a:focus, a:active {
     color: #FFF;
     display: block;
 }
+.discover-btn a:hover, .discover-btn a:focus, .discover-btn a:active {
+    color: #e16d3e;
+}
+
 
 @media only screen and (max-width: 1170px) {
     .nav-block  ul li:last-child {
@@ -235,6 +239,7 @@ a:hover, a:focus, a:active {
     position: fixed;
     bottom: 40px;
     right: 200px;
+    z-index: -;
 }
 .latest-news-btn a {
     border: 1px solid #666;
@@ -244,6 +249,10 @@ a:hover, a:focus, a:active {
     border-radius: 2px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
+}
+.latest-news-btn a:hover, .latest-news-btn a:focus, .latest-news-btn a:active {
+    border: 1px solid #e16d3e;
+    color: #e16d3e;
 }
 .arrow {
     font-size: 16px;
@@ -259,3 +268,24 @@ a:hover, a:focus, a:active {
     position: relative;
     z-index: 10;
 }
+.what-we-do {
+    max-width: 800px;
+}
+.what-we-do h2 {
+    font-family: "Lyon Display Regular";
+    font-size: 3.5rem;
+    line-height: 1;
+}
+
+.what-we-do p {
+    font-size: 15px;
+    font-size: .9375rem;
+    line-height: 1.9;
+    margin-top: 40px;
+    color: rgba(255,255,255,.8);
+    line-height: 1.9;
+    letter-spacing: -.01em;
+    font-family: arial, sans-serif;
+}
+
+   
